@@ -1,0 +1,150 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Главная | FAMIXMC</title>
+
+		<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+<link href="/Themes/css/font-awesome.min.css" rel="stylesheet">
+
+<link href="/Themes/css/font-roboto.css" rel="stylesheet">
+
+<link href="/Themes/css/global.css" rel="stylesheet">
+
+<link href="/Themes/css/global-responsive.css" rel="stylesheet">
+
+<script src="/Themes/js/jquery.min.js"></script>
+
+<script src="/Themes/js/jquery.easing.js"></script>
+
+<script>var qx = {root_url: '/', token: 'c6e5ff0ec6ee685afa78998aff9603c5 - 178.89.167.146', theme_url: '/Themes/' };</script>
+
+<script src="/Themes/js/global.js"></script>
+
+<script src="/Themes/js/clipboard.min.js"></script><script src="/Themes/js/openapi.js"></script><link href="/Themes/Resources/Main/css/global.css" rel="stylesheet"><link href="/Themes/Resources/Main/css/global-responsive.css" rel="stylesheet"><script src="/Themes/Resources/Main/js/global.js?8"></script>
+	</head>
+
+	<body>
+
+		<div class="navbar" id="mainnav">
+	<div class="container">
+		<div class="navbar-wrapper">
+			<div class="block-left">
+				<ul>
+					<li><a class="mobile" href="#"><i class="fa fa-bars"></i></a></li>
+					<li><a class="brand" href="/">FAMIXMC</a></li>
+				</ul>
+			</div>
+
+			<div class="block-right">
+				<ul>
+					<li><a href="/">Главная</a></li>
+					<li><a href="/donate/">Описание доната</a></li>
+					<li><a href="/page/faq/">FAQ</a></li>
+					<li><a href="/page/rules/">Правила</a></li>
+					<li><a href="/tickets/">Тех. поддержка</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="slide-s" id="buy">
+	<div class="container">
+		<form method="post" class="hidden-form">
+			<input type="hidden" name="account" value="0">
+			<input type="hidden" name="sum" value="0">
+			<input type="hidden" name="desc" value="">
+		</form>
+
+		<div class="monitoring">
+			<ul>
+				<li class="text-left">
+					<div class="wrapper">
+						<div class="title text-upper">Онлайн</div>
+						<div class="value text-upper" id="online">314</div>
+					</div>
+				</li>
+
+				<li class="sitename">
+					<div class="wrapper">
+						<div class="title text-upper">FAMIXMC</div>
+					</div>
+				</li>
+
+				<li class="text-right">
+					<div class="wrapper">
+						<div class="title text-upper">Рекорд</div>
+						<div class="value text-upper" id="record">578</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="discount">
+			<div class="wrapper bg-white text-center">
+				<b class="text-upper">Скидки 90%</b> на все привилегии ( Цены указаны с учетом скидки )<br>Весь донат покупается навсегда и остаётся после вайпа!<br>Чтобы доплатить ведите свой ник и система посчитет сумму!
+			</div>
+		</div>
+
+		<form method="post" class="form">
+			<input type="text" id="login" placeholder="ВВЕДИТЕ ВАШ НИК" maxlength="32">
+
+			<select id="item">
+				<optgroup data-type="perm" label="ПИВИЛЕГИИ">
+					<option value="1" data-id="1" data-price="9">ВИП 9 РУБ</option><option value="2" data-id="2" data-price="19">ПРЕМИУМ 19 РУБ</option><option value="3" data-id="3" data-price="29">КРЕАТИВ 29 РУБ</option><option value="4" data-id="4" data-price="39">МОДЕР 39 РУБ</option><option value="5" data-id="5" data-price="49">АДМИН 49 РУБ</option><option value="6" data-id="6" data-price="79">ГЛ.АДМИН 79 РУБ</option><option value="7" data-id="7" data-price="99">СОЗДАТЕЛЬ 99 РУБ</option><option value="8" data-id="8" data-price="129">ОСНОВАТЕЛЬ 129 РУБ</option><option value="9" data-id="9" data-price="149">ОПЕРАТОР 149 РУБ</option><option value="10" data-id="10" data-price="199">ХЕЛПЕР 199 РУБ</option><option value="11" data-id="11" data-price="299">ВЛАДЕЛЕЦ 299 РУБ</option><option value="12" data-id="12" data-price="1300">КОМАНДА ПРОЕКТА 1300 РУБ</option>
+				</optgroup>
+
+				<optgroup data-type="key" label="КЛЮЧИ">
+					<option value="13" data-id="13" data-price="25">5 шт. 25 руб.</option><option value="14" data-id="14" data-price="49">10 шт. 49руб</option><option value="15" data-id="15" data-price="99">20 шт. 99руб.</option><option value="16" data-id="16" data-price="149">35 шт. 149руб.</option><option value="17" data-id="17" data-price="249">60 шт. 249руб.</option>
+				</optgroup>
+			</select>
+
+			<input type="hidden" id="promo" placeholder="ПРОМО-КОД">
+
+			<button type="button" id="prebuy" class="btn btn-orange text-upper block">Купить / Доплатить</button>
+		</form>
+	</div>
+</div>
+
+<div class="slide-s" id="news">
+	<div class="container">
+		<div class="title text-center"></div>
+
+		<div class="news middle-block">
+			<div class="wrapper">
+				<div id="vk_groups"></div>
+				<script type="text/javascript">
+					VK.Widgets.Group("vk_groups", {mode: 4, width: "260", height: "416"}, 132537478);
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+
+		<footer>
+	<div class="container">
+		Developed by <a href="https://vk.com/qexyorg" target="_blank">Qexy</a> | Pleasure CMF
+	</div>
+</footer>
+
+		
+
+		<div id="js-loader" title="Загрузка..."><img src="/Themes/img/loading.gif" alt="Loading..." /></div>
+
+		<div id="js-notify">
+			<div class="wrapper">
+				<span class="text"></span><a href="#" class="close">СКРЫТЬ</a>
+			</div>
+		</div>
+
+		<a href="body" data-location="0" class="global-scroll scroll-to"><i class="fa fa-arrow-circle-o-up"></i></a>
+	</body>
+</html>
